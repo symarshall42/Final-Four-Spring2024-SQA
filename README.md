@@ -1,4 +1,7 @@
-# Final-Four-Spring2024-SQA
-Software Quality Assurance Spring 2024
-Team Name: Final Four
-Team Member: Shataydrian Marshall, Alden Snajder, Blake Anderson, Griffin D
+# Forensic Anti-patterns in Machine Learning Engineering 
+
+## Farzana Ahmed Bhuiyan and Akond Rahman 
+
+### Details 
+
+> Demo video for the work in progress: https://drive.google.com/file/d/14lcIbDCIfHu8chqEOS7IX-yEckDFjT8z/view?usp=sharing
