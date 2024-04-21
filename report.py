@@ -3,6 +3,9 @@ Farzana Ahamed Bhuiyan
 Dec 3, 2020
 Report Frequency: RQ2
 '''
+'''
+Forensics added by Alden Snajder
+'''
 import numpy as np 
 import os 
 import pandas as pd 
@@ -60,42 +63,72 @@ def reportDensity( res_file ):
 if __name__=='__main__': 
     print('*'*100 )
     t1 = time.time()
+    '''
+    Inserted logging statement because time data  can be poisoned.
+    '''
+    logObj.info('The time given is: %s', t1)
+
     print('Started at:', giveTimeStamp() )
     print('*'*100 )
     
     print('*'*100) 
     print("MODELZOO Proportion")
     RESULTS_FILE = 'PROPORTION_MODELZOO.csv'    
+    '''
+    Inserted logging statement because model can be tricked.
+    '''
+    logObj.info('The output file is: %s', RESULTS_FILE)
+
     reportProp( RESULTS_FILE )
     print('*'*50) 
     
     print('*'*50) 
     print("MODELZOO Density")
-    RESULTS_FILE = 'DENSITY_MODELZOO.csv'    
+    RESULTS_FILE = 'DENSITY_MODELZOO.csv'
+    '''
+    Inserted logging statement because model can be tricked.
+    '''
+    logObj.info('The output file is: %s', RESULTS_FILE)    
     reportDensity( RESULTS_FILE )
     print('*'*100) 
     
     print('*'*100) 
     print("GITLAB Proportion")
-    RESULTS_FILE = 'PROPORTION_GITLAB.csv'    
+    RESULTS_FILE = 'PROPORTION_GITLAB.csv'
+    '''
+    Inserted logging statement because model can be tricked.
+    '''
+    logObj.info('The output file is: %s', RESULTS_FILE)    
     reportProp( RESULTS_FILE )
     print('*'*50) 
     
     print('*'*50) 
     print("GITLAB Density")
     RESULTS_FILE = 'DENSITY_GITLAB.csv'    
+    '''
+    Inserted logging statement because model can be tricked.
+    '''
+    logObj.info('The output file is: %s', RESULTS_FILE)
     reportDensity( RESULTS_FILE )
     print('*'*100) 
     
     print('*'*100) 
     print("GITHUB Proportion")
     RESULTS_FILE = 'PROPORTION_GITHUB.csv'    
+    '''
+    Inserted logging statement because model can be tricked.
+    '''
+    logObj.info('The output file is: %s', RESULTS_FILE)
     reportProp( RESULTS_FILE )
     print('*'*50) 
     
     print('*'*50) 
     print("GITHUB Density")
     RESULTS_FILE = 'DENSITY_GITHUB.csv'    
+    '''
+    Inserted logging statement because model can be tricked.
+    '''
+    logObj.info('The output file is: %s', RESULTS_FILE)
     reportDensity( RESULTS_FILE )
     print('*'*100) 
 
