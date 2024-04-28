@@ -12,7 +12,7 @@ import pandas as pd
 import time 
 import datetime 
 import statistics
-
+import myLogger
 
 def giveTimeStamp():
   tsObj = time.time()
@@ -63,6 +63,7 @@ def reportDensity( res_file ):
 if __name__=='__main__': 
     print('*'*100 )
     t1 = time.time()
+    logObj = myLogger.giveMeLoggingObject()
     '''
     Inserted logging statement because time data  can be poisoned.
     '''
