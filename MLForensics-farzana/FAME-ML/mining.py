@@ -6,8 +6,8 @@ import time
 from datetime import datetime
 import subprocess
 import shutil
-from git import Repo
-from git import exc 
+#from git import Repo
+#from git import exc 
 
 
 def giveTimeStamp():
