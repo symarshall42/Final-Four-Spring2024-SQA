@@ -4,7 +4,6 @@ import csv
 import numpy
 
 
-
 file_path = 'output.csv'
 
 def addonef(v1):
